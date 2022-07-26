@@ -1,1 +1,47 @@
+/* 
 
+-------------------------------FONTS
+header text:
+    font-family: Open Sans;
+    font-weight: bold;
+
+body and label text:
+    font-family: Open Sans;
+    font-weight: light;
+
+-------------------------------BACKGROUND COLOURS
+    background-color: #1f1f3d;
+    background-color: #a9aad2;
+    background-color: #eaeaf4;
+
+-------------------------------IDEA BOX
+ top:
+    background-color: #1f1f3d;
+    color: #1f1f3d;
+
+middle:
+    background-color: #ffffff;
+    color: #1f1f3d;
+
+bottom:
+    background-color: #5356a4;
+    color: #e9e9f3;
+
+-------------------------------LEFT NAVIGATION
+header1:
+    color: #e9e9f3;
+
+line break:
+    color: #353567;
+
+header 2:
+    color: #bfbfdd;
+
+button:
+    background-color: #5356a4;
+    color: #e9e9f3;
+
+background:
+    background-color: #1f1f3d;
+
+*/
