@@ -1,6 +1,11 @@
 /* -------------------------------BODY */
 body {
-    font-family: "Open Sans", sans-serif;}
+    font-family: "Open Sans", sans-serif;
+background-color: #eaeaf4;
+    display: flex;
+    align-items: stretch;
+  }
+
 img {
     height: 28px;
     width: 28px;
@@ -9,47 +14,95 @@ img {
 /* -------------------------------LEFT NAV SECTION */
 .left-nav {
     background-color: #1f1f3d;
+    width: 400px;
 }
 
 .ideabox-title {
     color: #e9e9f3;
+    margin-left: 12%;
+}
+
+.starred-border {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #5356a4;
 }
 
 .filter {
-    color: #bfbfdd;
+  color: #bfbfdd;
+  margin-left: 12%;
 }
 
 .starred-btn {
-    background-color: #5356a4;
-    color: #e9e9f3;
-    font-weight: bold;
-    border: 0px;
+  background-color: #5356a4;
+  color: #e9e9f3;
+  font-weight: bold;
+  font-size: 1.5vw;
+  border: 1px;
+  border-style: solid;
+  border-color: #1F1F3D;
+  /* border-radius:  */
+  margin-left: 12%;
+  height: 10%;
+  width: 76%;
 }
-
-hr {
-    color: #5356a4;
-}
-
-
 /* -------------------------------FORM SECTION */
+.right-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .form-section {
-    background-color: #a9aad2;
+  background-color: #a9aad2;
+  display:flex;
+  flex-grow: 3;
+  width:100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-input {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 label {
     color: #1f1f3d;
 }
 
+input {
+  border: 1px;
+  border-style: solid;
+  border-color: #1F1F3D;
+  /* border-radius:  */
+}
+
+.search {
+  background-color: #353567;
+  border: 1px;
+  border-style: solid;
+  border-color: #1F1F3D;
+  /* border-radius:  */
+}
+
 .save-btn {
-    background-color: #1f1f3d;
+    background-color: #353567;
     color: #e9e9f3;
     font-weight: bold;
+    border: 1px;
+    border-style: solid;
+    border-color: #1F1F3D;
 }
 
 
 /* -------------------------------CARD SECTION */
 .saved-ideas {
     background-color: #eaeaf4;
+    border: 1px;
+    border-style: solid;
+    border-color: #1F1F3D;
 }
 
 .card-top-bar {
@@ -128,28 +181,3 @@ background:
     background-color: #1f1f3d;
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
