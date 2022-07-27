@@ -1,25 +1,40 @@
 /* -------------------------------BODY */
+/* * {
+  border: solid red;
+} */
+html,
 body {
-    font-family: "Open Sans", sans-serif;
-background-color: #eaeaf4;
-    display: flex;
-    align-items: stretch;
-  }
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #eaeaf4;
+  display: flex;
+  align-items: stretch;
+  min-height: 100%;
+}
 
 img {
-    height: 28px;
-    width: 28px;
+  height: 28px;
+  width: 28px;
 }
 
 /* -------------------------------LEFT NAV SECTION */
 .left-nav {
-    background-color: #1f1f3d;
-    width: 400px;
+  background-color: #1f1f3d;
+  width: 400px;
+  height: auto;
 }
 
 .ideabox-title {
-    color: #e9e9f3;
-    margin-left: 12%;
+  color: #e9e9f3;
+  margin-left: 12%;
 }
 
 .starred-border {
@@ -37,14 +52,16 @@ img {
   background-color: #5356a4;
   color: #e9e9f3;
   font-weight: bold;
-  font-size: 1.5vw;
+  font-size: 20px;
   border: 1px;
   border-style: solid;
-  border-color: #1F1F3D;
-  /* border-radius:  */
+  border-color: #1f1f3d;
+  border-radius: 5px;
   margin-left: 12%;
-  height: 10%;
-  width: 76%;
+  margin-bottom: 10%;
+  height: 12%;
+  width: 80%;
+  vertical-align: text-bottom;
 }
 /* -------------------------------FORM SECTION */
 .right-section {
@@ -55,86 +72,137 @@ img {
 
 .form-section {
   background-color: #a9aad2;
-  display:flex;
+  display: flex;
   flex-grow: 3;
-  width:100%;
+  width: 100%;
   align-items: center;
   justify-content: center;
+  /* align-content: space-between; */
+  column-gap: 30px;
+  height: 45%;
 }
 
 .user-input {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 25px;
+  width: 50%;
+}
+
+.title-input {
+  /* rename class-Piper */
+  display: flex;
+  flex-direction: column;
+}
+
+#input-title {
+  height: 30px;
+}
+
+#input-body {
+  height: 90px;
+}
+
+.body-input {
+  /* rename class-Piper */
+  display: flex;
   flex-direction: column;
 }
 
 label {
-    color: #1f1f3d;
+  color: #1f1f3d;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 input {
   border: 1px;
   border-style: solid;
-  border-color: #1F1F3D;
-  /* border-radius:  */
+  border-color: #1f1f3d;
+  border-radius: 5px;
 }
 
 .search {
-  background-color: #353567;
   border: 1px;
   border-style: solid;
-  border-color: #1F1F3D;
-  /* border-radius:  */
+  border-color: #1f1f3d;
+  border-radius: 5px;
+  height: 40px;
+  display: flex;
+}
+
+.search-img {
+  background-color: #353567;
+  height: 100%;
+  /* margin-left: 5px; */
+  padding: 0px 5px;
+}
+
+.input-search {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  height: 95%;
+  width: 100%;
+  border: none;
 }
 
 .save-btn {
-    background-color: #353567;
-    color: #e9e9f3;
-    font-weight: bold;
-    border: 1px;
-    border-style: solid;
-    border-color: #1F1F3D;
+  background-color: #353567;
+  color: #e9e9f3;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px;
+  border-style: solid;
+  border-color: #1f1f3d;
+  border-radius: 5px;
+  height: 40px;
 }
-
 
 /* -------------------------------CARD SECTION */
 .saved-ideas {
-    background-color: #eaeaf4;
-    border: 1px;
-    border-style: solid;
-    border-color: #1F1F3D;
+  background-color: #eaeaf4;
+  width: 100%;
 }
-
+.single-card {
+  height: 65px;
+  width: 200px;
+  margin-left: 10px;
+  border: 1px;
+  border-style: solid;
+  border-color: #1f1f3d;
+}
 .card-top-bar {
-    background-color: #1f1f3d;
+  background-color: #1f1f3d;
 }
 
 .card-body {
-    background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 .card-body h1 {
-    color: #1f1f3d;
-    font-weight: bold;
+  color: #1f1f3d;
+  font-weight: bold;
 }
 
 .card-body p {
-    color: #1f1f3d;
-    font-weight: light;
+  color: #1f1f3d;
+  font-weight: light;
 }
 
 .card-bottom-bar {
-    background-color: #5356a4;
+  background-color: #5356a4;
 }
 
 .comment {
-    color: #e9e9f3;
-    font-weight: bold;
+  color: #e9e9f3;
+  font-weight: bold;
 }
 
 /* -------------------------------UTLITIES */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 /* -------------------------------FONTS
 header text:
