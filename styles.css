@@ -14,43 +14,52 @@ img {
 /* -------------------------------LEFT NAV SECTION */
 .left-nav {
     background-color: #1f1f3d;
+    width: 400px;
 }
 
 .ideabox-title {
     color: #e9e9f3;
+    margin-left: 12%;
+}
+
+.starred-border {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #5356a4;
 }
 
 .filter {
-    color: #bfbfdd;
+  color: #bfbfdd;
+  margin-left: 12%;
 }
 
 .starred-btn {
-    background-color: #5356a4;
-    color: #e9e9f3;
-    font-weight: bold;
-    border: 1px;
-    border-style: solid;
-    border-color: #1F1F3D;
-    /* border-radius:  */
+  background-color: #5356a4;
+  color: #e9e9f3;
+  font-weight: bold;
+  font-size: 1.5vw;
+  border: 1px;
+  border-style: solid;
+  border-color: #1F1F3D;
+  /* border-radius:  */
+  margin-left: 12%;
+  height: 10%;
+  width: 76%;
 }
-
-hr {
-    color: #5356a4;
-}
-
 /* -------------------------------FORM SECTION */
 .right-section {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  width: 100%;
 }
 
 .form-section {
   background-color: #a9aad2;
-  /* display:flex;
-  flex-wrap: wrap;
-  flex-direction: column; */
+  display:flex;
+  flex-grow: 3;
   width:100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .user-input {
