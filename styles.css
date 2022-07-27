@@ -1,6 +1,83 @@
-/* 
+/* -------------------------------BODY */
+body {
+    font-family: Open Sans;
+}
 
--------------------------------FONTS
+
+/* -------------------------------LEFT NAV SECTION */
+.left-nav {
+    background-color: #1f1f3d;
+}
+
+.ideabox-title {
+    color: #e9e9f3;
+    font-weight: bold;
+}
+
+.filter {
+    color: #bfbfdd;
+}
+
+.starred-btn {
+    background-color: #5356a4;
+    color: #e9e9f3;
+    font-weight: bold;
+}
+
+
+/* -------------------------------FORM SECTION */
+.form-section {
+    background-color: #a9aad2;
+}
+
+label {
+    color: #1f1f3d;
+    font-weight: bold;
+}
+
+.save-btn {
+    background-color: #1f1f3d;
+    color: #e9e9f3;
+    font-weight: bold;
+}
+
+
+/* -------------------------------CARD SECTION */
+.saved-ideas {
+    background-color: #eaeaf4;
+}
+
+.card-top-bar {
+    background-color: #1f1f3d;
+}
+
+.card-body {
+    background-color: #ffffff;
+}
+
+.card-body h1 {
+    color: #1f1f3d;
+    font-weight: bold;
+}
+
+.card-body p {
+    color: #1f1f3d;
+    font-weight: light;
+}
+
+.card-bottom-bar {
+    background-color: #5356a4;
+}
+
+.comment {
+    color: #e9e9f3;
+    font-weight: bold;
+}
+
+/* -------------------------------UTLITIES */
+
+
+/* -------------------------------FONTS
 header text:
     font-family: Open Sans;
     font-weight: bold;
@@ -45,3 +122,28 @@ background:
     background-color: #1f1f3d;
 
 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
