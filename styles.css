@@ -1,1 +1,155 @@
+/* -------------------------------BODY */
+body {
+    font-family: "Open Sans", sans-serif;}
+img {
+    height: 28px;
+    width: 28px;
+}
+
+/* -------------------------------LEFT NAV SECTION */
+.left-nav {
+    background-color: #1f1f3d;
+}
+
+.ideabox-title {
+    color: #e9e9f3;
+}
+
+.filter {
+    color: #bfbfdd;
+}
+
+.starred-btn {
+    background-color: #5356a4;
+    color: #e9e9f3;
+    font-weight: bold;
+    border: 0px;
+}
+
+hr {
+    color: #5356a4;
+}
+
+
+/* -------------------------------FORM SECTION */
+.form-section {
+    background-color: #a9aad2;
+}
+
+label {
+    color: #1f1f3d;
+}
+
+.save-btn {
+    background-color: #1f1f3d;
+    color: #e9e9f3;
+    font-weight: bold;
+}
+
+
+/* -------------------------------CARD SECTION */
+.saved-ideas {
+    background-color: #eaeaf4;
+}
+
+.card-top-bar {
+    background-color: #1f1f3d;
+}
+
+.card-body {
+    background-color: #ffffff;
+}
+
+.card-body h1 {
+    color: #1f1f3d;
+    font-weight: bold;
+}
+
+.card-body p {
+    color: #1f1f3d;
+    font-weight: light;
+}
+
+.card-bottom-bar {
+    background-color: #5356a4;
+}
+
+.comment {
+    color: #e9e9f3;
+    font-weight: bold;
+}
+
+/* -------------------------------UTLITIES */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+/* -------------------------------FONTS
+header text:
+    font-family: Open Sans;
+    font-weight: bold;
+
+body and label text:
+    font-family: Open Sans;
+    font-weight: light;
+
+-------------------------------BACKGROUND COLOURS
+    background-color: #1f1f3d;
+    background-color: #a9aad2;
+    background-color: #eaeaf4;
+
+-------------------------------IDEA BOX
+ top:
+    background-color: #1f1f3d;
+    color: #1f1f3d;
+
+middle:
+    background-color: #ffffff;
+    color: #1f1f3d;
+
+bottom:
+    background-color: #5356a4;
+    color: #e9e9f3;
+
+-------------------------------LEFT NAVIGATION
+header1:
+    color: #e9e9f3;
+
+line break:
+    color: #353567;
+
+header 2:
+    color: #bfbfdd;
+
+button:
+    background-color: #5356a4;
+    color: #e9e9f3;
+
+background:
+    background-color: #1f1f3d;
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
