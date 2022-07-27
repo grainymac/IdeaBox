@@ -1,6 +1,11 @@
 /* -------------------------------BODY */
 body {
-    font-family: "Open Sans", sans-serif;}
+    font-family: "Open Sans", sans-serif;
+background-color: #eaeaf4;
+    display: flex;
+    align-items: stretch;
+  }
+
 img {
     height: 28px;
     width: 28px;
@@ -23,33 +28,72 @@ img {
     background-color: #5356a4;
     color: #e9e9f3;
     font-weight: bold;
-    border: 0px;
+    border: 1px;
+    border-style: solid;
+    border-color: #1F1F3D;
+    /* border-radius:  */
 }
 
 hr {
     color: #5356a4;
 }
 
-
 /* -------------------------------FORM SECTION */
+.right-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 .form-section {
-    background-color: #a9aad2;
+  background-color: #a9aad2;
+  /* display:flex;
+  flex-wrap: wrap;
+  flex-direction: column; */
+  width:100%;
+}
+
+.user-input {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 label {
     color: #1f1f3d;
 }
 
+input {
+  border: 1px;
+  border-style: solid;
+  border-color: #1F1F3D;
+  /* border-radius:  */
+}
+
+.search {
+  background-color: #353567;
+  border: 1px;
+  border-style: solid;
+  border-color: #1F1F3D;
+  /* border-radius:  */
+}
+
 .save-btn {
-    background-color: #1f1f3d;
+    background-color: #353567;
     color: #e9e9f3;
     font-weight: bold;
+    border: 1px;
+    border-style: solid;
+    border-color: #1F1F3D;
 }
 
 
 /* -------------------------------CARD SECTION */
 .saved-ideas {
     background-color: #eaeaf4;
+    border: 1px;
+    border-style: solid;
+    border-color: #1F1F3D;
 }
 
 .card-top-bar {
@@ -128,28 +172,3 @@ background:
     background-color: #1f1f3d;
 
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
