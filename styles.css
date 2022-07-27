@@ -1,9 +1,23 @@
 /* -------------------------------BODY */
+/* * {
+  border: solid red;
+} */
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #eaeaf4;
   display: flex;
   align-items: stretch;
+  min-height: 100%;
 }
 
 img {
@@ -15,6 +29,7 @@ img {
 .left-nav {
   background-color: #1f1f3d;
   width: 400px;
+  height: auto;
 }
 
 .ideabox-title {
@@ -37,14 +52,14 @@ img {
   background-color: #5356a4;
   color: #e9e9f3;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
   border: 1px;
   border-style: solid;
   border-color: #1f1f3d;
   border-radius: 5px;
   margin-left: 12%;
   margin-bottom: 10%;
-  height: 8%;
+  height: 12%;
   width: 80%;
   vertical-align: text-bottom;
 }
@@ -64,15 +79,10 @@ img {
   justify-content: center;
   /* align-content: space-between; */
   column-gap: 30px;
-  border-radius: 5px;
+  height: 45%;
 }
 
 .user-input {
-  /* display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: 10%;
-  width: 80% */
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -86,11 +96,11 @@ img {
 }
 
 #input-title {
-  height: 40px;
+  height: 30px;
 }
 
 #input-body {
-  height: 100px;
+  height: 90px;
 }
 
 .body-input {
@@ -103,7 +113,7 @@ label {
   color: #1f1f3d;
   padding-bottom: 10px;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 input {
@@ -114,12 +124,29 @@ input {
 }
 
 .search {
-  background-color: #353567;
   border: 1px;
   border-style: solid;
   border-color: #1f1f3d;
   border-radius: 5px;
   height: 40px;
+  display: flex;
+}
+
+.search-img {
+  background-color: #353567;
+  height: 100%;
+  /* margin-left: 5px; */
+  padding: 0px 5px;
+}
+
+.input-search {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  height: 95%;
+  width: 100%;
+  border: none;
 }
 
 .save-btn {
@@ -137,11 +164,16 @@ input {
 /* -------------------------------CARD SECTION */
 .saved-ideas {
   background-color: #eaeaf4;
+  width: 100%;
+}
+.single-card {
+  height: 65px;
+  width: 200px;
+  margin-left: 10px;
   border: 1px;
   border-style: solid;
   border-color: #1f1f3d;
 }
-
 .card-top-bar {
   background-color: #1f1f3d;
 }
