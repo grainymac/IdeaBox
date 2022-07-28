@@ -2,6 +2,7 @@
 /* * {
   border: solid red;
 } */
+
 html,
 body {
   padding: 0;
@@ -79,7 +80,7 @@ img {
   justify-content: center;
   /* align-content: space-between; */
   column-gap: 30px;
-  height: 45%;
+  height: 40%;
 }
 
 .user-input {
@@ -140,10 +141,11 @@ input {
 }
 
 .input-search {
-  border-top-right-radius: 5px;
+  /* border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px; */
+  border-radius: 2px;
   height: 95%;
   width: 100%;
   border: none;
@@ -164,22 +166,30 @@ input {
 /* -------------------------------CARD SECTION */
 .saved-ideas {
   background-color: #eaeaf4;
+  height: 60%;
   width: 100%;
+  /* when flex wrap property is set to wrap, use align-content */
 }
+
 .single-card {
+  display: flex;
+  flex-direction: column;
   height: 65px;
   width: 200px;
   margin-left: 10px;
-  border: 1px;
+  /* border: 34px;
   border-style: solid;
-  border-color: #1f1f3d;
+  border-color: #1f1f3d; */
 }
 .card-top-bar {
   background-color: #1f1f3d;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-body {
   background-color: #ffffff;
+  width: 95%;
 }
 
 .card-body h1 {
@@ -193,12 +203,17 @@ input {
 }
 
 .card-bottom-bar {
+    display: flex;
+
   background-color: #5356a4;
+  height: 530px;
 }
 
 .comment {
   color: #e9e9f3;
   font-weight: bold;
+  margin: 0px;
+  padding-top: 5px;
 }
 
 /* -------------------------------UTLITIES */
