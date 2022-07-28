@@ -2,6 +2,7 @@
 /* * {
   border: solid red;
 } */
+
 html,
 body {
   padding: 0;
@@ -79,7 +80,7 @@ img {
   justify-content: center;
   /* align-content: space-between; */
   column-gap: 30px;
-  height: 45%;
+  height: 40%;
 }
 
 .user-input {
@@ -95,11 +96,11 @@ img {
   flex-direction: column;
 }
 
-#input-title {
+.input-title {
   height: 30px;
 }
 
-#input-body {
+.input-body {
   height: 90px;
 }
 
@@ -135,15 +136,11 @@ input {
 .search-img {
   background-color: #353567;
   height: 100%;
-  /* margin-left: 5px; */
   padding: 0px 5px;
 }
 
 .input-search {
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
+  border-radius: 2px;
   height: 95%;
   width: 100%;
   border: none;
@@ -164,41 +161,62 @@ input {
 /* -------------------------------CARD SECTION */
 .saved-ideas {
   background-color: #eaeaf4;
+  height: 60%;
   width: 100%;
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px
+
+  /* when flex wrap property is set to wrap, use align-content */
 }
+
 .single-card {
-  height: 65px;
+  display: flex;
+  flex-direction: column;
+  height: 220px;
   width: 200px;
-  margin-left: 10px;
-  border: 1px;
+  margin-top: 15px;
+  border: 2px;
   border-style: solid;
   border-color: #1f1f3d;
 }
 .card-top-bar {
   background-color: #1f1f3d;
+  display: flex;
+  justify-content: space-between;
 }
 
 .card-body {
   background-color: #ffffff;
+  height: 100%;
 }
 
 .card-body h1 {
   color: #1f1f3d;
   font-weight: bold;
+  margin-left: 10px;
 }
 
 .card-body p {
   color: #1f1f3d;
   font-weight: light;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .card-bottom-bar {
+  display: flex;
   background-color: #5356a4;
 }
 
 .comment {
   color: #e9e9f3;
   font-weight: bold;
+  margin: 0px;
+  padding-top: 5px;
 }
 
 /* -------------------------------UTLITIES */
