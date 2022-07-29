@@ -158,6 +158,11 @@ input {
   height: 40px;
 }
 
+.save-btn:disabled {
+  background-color: red;
+  cursor: pointer;
+}
+
 /* -------------------------------CARD SECTION */
 .saved-ideas {
   background-color: #eaeaf4;
@@ -168,7 +173,7 @@ input {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
-  gap: 20px
+  gap: 20px;
 
   /* when flex wrap property is set to wrap, use align-content */
 }
