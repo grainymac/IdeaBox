@@ -1,12 +1,12 @@
 class Idea {
   constructor() {
-    this.id = id;
+    this.id = Date.now();
     this.title = "";
     this.body = "";
     this.star = false;
   }
 
-updateIdea() {
+  updateIdea() {
 
 }
 }
