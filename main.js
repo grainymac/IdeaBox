@@ -8,15 +8,11 @@ var inputBody = document.querySelector("#input-body");
 var cardTitle = document.querySelector("#card-title");
 var cardText = document.querySelector("#card-text");
 var singleCard = document.querySelector("#saved-ideas");
+var formSection = document.querySelector("#form-section");
 //Event Listerners
 saveBtn.addEventListener("click", saveIdeaCard);
-
+formSection.addEventListener("input", disableButton);
 //Functions
-function disableButton() {
-  if (inputTitle.length > 0) {
-    saveBtn.addClassList.remove("disabled");
-  }
-}
 
 function saveIdeaCard() {
   event.preventDefault();
@@ -46,4 +42,17 @@ function saveIdeaCard() {
   </section>`;
   inputTitle.value = "";
   inputBody.value = "";
+  if (inputTitle.value && inputBody.value) {
+    saveBtn.disabled = false;
+  } else {
+    saveBtn.disabled = true;
+  }
+}
+
+function disableButton() {
+  if (inputTitle.value && inputBody.value) {
+    saveBtn.disabled = false;
+  } else {
+    saveBtn.disabled = true;
+  }
 }

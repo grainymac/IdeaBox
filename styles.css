@@ -156,11 +156,13 @@ input {
   border-color: #1f1f3d;
   border-radius: 5px;
   height: 40px;
+  cursor: pointer;
 }
 
 .save-btn:disabled {
-  background-color: red;
-  cursor: pointer;
+  background-color: #d5d5e3;
+  color: #7d7d7d;
+  cursor: not-allowed;
 }
 
 /* -------------------------------CARD SECTION */
