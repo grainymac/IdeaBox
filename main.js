@@ -1,5 +1,5 @@
 //Global Variables
-var ideaList = [];
+var ideaListArr = [];
 
 //--------------------------------------------Query Selectors
 var saveBtn = document.querySelector("#save-btn");
@@ -17,10 +17,10 @@ formSection.addEventListener("input", disableButton);
 singleCard.addEventListener("click", deletingCard);
 
 //----------------------------------------------Functions
-function saveIdeaCard() {
+function saveIdeaCard(event) {
   event.preventDefault();
   var idea = new Idea(inputTitle.value, inputBody.value);
-  ideaList.push(idea);
+  ideaListArr.push(idea);
   reload();
   // singleCard.innerHTML += `<section class="single-card" id="single-card">
   //   <div class="card-top-bar">
@@ -61,23 +61,43 @@ function disableButton() {
   }
 }
 
+
 function deletingCard(event) {
-  var id = parseInt(event.target.id);
-  
-  for (var i = 0; i <ideaList.length; i++) {
-    console.log('hiii', ideaList[i].id);
-    if (ideaList[i].id === id) {
-      ideaList[i].id.splice(i, 1);
-      // i--;
+  console.log('hello');
+  var posterID = parseInt(event.target.id);
+  for (var i = 0; i < ideaListArr.length; i++) {
+    if (posterID === ideaListArr[i].id) {
+      ideaListArr.splice(i, 1);
+    } else {
+    reload()
     }
-    console.log('hello', ideaList);
-    reload();
   }
 }
 
+
+
+
+
+
+
+
+// function deletingCard(event) {
+//   var unwantedIdea = event.target.closest('section');
+//   event.target.closest('section').remove();
+//   for (var i = 0; i < ideaList.length; i++) {
+//     console.log('hiii', ideaList[i].unwantedIdea);
+//     if (ideaList[i].id === unwantedIdea.id) {
+//       ideaList.splice(i, 1);
+//       i--;
+//     }
+//     console.log('hello', ideaList);
+//     // reload();
+//   }
+
+
   function reload() {
     singleCard.innerHTML = '';
-    for (var i = 0; i < ideaList.length; i++) {
+    for (var i = 0; i < ideaListArr.length; i++) {
     singleCard.innerHTML += `<section class="single-card" id="single-card">
     <div class="card-top-bar">
       <img
@@ -92,8 +112,8 @@ function deletingCard(event) {
       />
     </div>
     <div class="card-body">
-      <h1 class="card-title" id="card-title">${ideaList[i].title}</h1>
-      <p class="card-text" id="card-text">${ideaList[i].body}</p>
+      <h1 class="card-title" id="card-title">${ideaListArr[i].title}</h1>
+      <p class="card-text" id="card-text">${ideaListArr[i].body}</p>
     </div>
     <div class="card-bottom-bar">
       <img class="comment-img" src="assets/comment.svg" alt="comment icon"/>
