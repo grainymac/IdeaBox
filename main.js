@@ -7,21 +7,23 @@ var inputTitle = document.querySelector("#input-title");
 var inputBody = document.querySelector("#input-body");
 var cardTitle = document.querySelector("#card-title");
 var cardText = document.querySelector("#card-text");
-var singleCard = document.querySelector("#saved-ideas");
+var savedIdeas = document.querySelector("#saved-ideas");
 var formSection = document.querySelector("#form-section");
 var deleteCard = document.querySelector("#delete-card");
 var starredBtn = document.querySelector("#starred-btn");
+var indCard = document.querySelector("#single-card")
 //--------------------------------------------Event Listerners
 saveBtn.addEventListener("click", saveIdeaCard);
 formSection.addEventListener("input", disableButton);
 starredBtn.addEventListener("click", showStarred);
 //----------------------------------------------Functions
+
 function saveIdeaCard(event) {
   event.preventDefault();
   var idea = new Idea(inputTitle.value, inputBody.value);
   ideaListArr.push(idea);
   reload();
-  // singleCard.innerHTML += `<section class="single-card" id="single-card">
+  // savedIdeas.innerHTML += `<section class="single-card" id="single-card">
   //   <div class="card-top-bar">
   //     <img
   //     class="star-img"
@@ -78,7 +80,7 @@ function addColoredStar(event) {
   var cardID = parseInt(event.target.id);
   for (var i = 0; i < ideaListArr.length; i++) {
     if (cardID === ideaListArr[i].id) {
-      ideaListArr[i].updateIdea();
+      ideaListArr[i].updateIdea(cardID);
       console.log(ideaListArr);
     }
   }
@@ -98,9 +100,9 @@ function addColoredStar(event) {
 //   }
 
 function reload() {
-  singleCard.innerHTML = "";
+  savedIdeas.innerHTML = "";
   for (var i = 0; i < ideaListArr.length; i++) {
-    singleCard.innerHTML += `<section class="single-card" id="single-card">
+    savedIdeas.innerHTML += `<section class="single-card" id="single-card">
     <div class="card-top-bar">
       <img
       onclick="addColoredStar(event)"
@@ -115,7 +117,7 @@ function reload() {
       src="assets/delete.svg"
       alt="delete icon"
       id="${ideaListArr[i].id}"
-            />
+      />
     </div>
     <div class="card-body">
       <h1 class="card-title" id="card-title">${ideaListArr[i].title}</h1>
@@ -129,14 +131,21 @@ function reload() {
   }
 }
 
+//create helper function to hide each card
 function showStarred() {
-  for (var i = 0; i < ideaListArr; i++);
-  console.log(ideaListArr[i].star)
-    if (ideaListArr[i].star === true) {
-      singleCard.classList.add("hidden")
+  //hide the
+  for (var i = 0; i < ideaListArr.length - 1; i++);
+  // console.log("hello", i);
+  // console.log("hi", ideaListArr);
+  // console.log("good day", ideaListArr[i]);
+  // // console.log(ideaListArr[i].star)
+    if (ideaListArr[i].star) {
+      console.log("hello", ideaListArr[i])
+      indCard.classList.remove("hidden")
+      //change target - extract id from array
+      //get the id to match the id in the DOM
     }
 }
-
 //show starred Ideas
 //look at each element in the array
 //check if this.star is true

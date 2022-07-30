@@ -6,9 +6,9 @@ class Idea {
     this.star = false;
   }
 
-  updateIdea() {
-    var favCard = document.querySelector(".star-img");
-    if (this.star === false) {
+  updateIdea(cardID) {
+    var favCard = document.getElementById(`${cardID}`);
+    if (!this.star) {
       this.star = true;
       favCard.src = "assets/star-active.svg";
     } else {
