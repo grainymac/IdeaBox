@@ -10,11 +10,11 @@ var cardText = document.querySelector("#card-text");
 var singleCard = document.querySelector("#saved-ideas");
 var formSection = document.querySelector("#form-section");
 var deleteCard = document.querySelector("#delete-card");
-
+var starredBtn = document.querySelector("#starred-btn");
 //--------------------------------------------Event Listerners
 saveBtn.addEventListener("click", saveIdeaCard);
 formSection.addEventListener("input", disableButton);
-
+starredBtn.addEventListener("click", showStarred);
 //----------------------------------------------Functions
 function saveIdeaCard(event) {
   event.preventDefault();
@@ -62,6 +62,7 @@ function disableButton() {
 
 function deletingCard(event) {
   var cardID = parseInt(event.target.id);
+  console.log(event.target)
   for (var i = 0; i < ideaListArr.length; i++) {
     if (cardID === ideaListArr[i].id) {
       ideaListArr.splice(i, 1);
@@ -127,3 +128,18 @@ function reload() {
   </section>`;
   }
 }
+
+function showStarred() {
+  for (var i = 0; i < ideaListArr; i++);
+  console.log(ideaListArr[i].star)
+    if (ideaListArr[i].star === true) {
+      singleCard.classList.add("hidden")
+    }
+}
+
+//show starred Ideas
+//look at each element in the array
+//check if this.star is true
+//if this.star is false, we want to add hidden if this.star
+//account for shift in elements as we go through the array (i--)
+//want to display new array in DOM
