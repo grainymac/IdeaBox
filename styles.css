@@ -229,6 +229,9 @@ input {
 /* -------------------------------UTLITIES */
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
+.hidden {
+  display: none;
+}
 /* -------------------------------FONTS
 header text:
     font-family: Open Sans;
