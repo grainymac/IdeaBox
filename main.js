@@ -3,8 +3,8 @@ var ideaListArr = [];
 
 //--------------------------------------------Query Selectors
 var saveBtn = document.querySelector("#save-btn");
-var inputTitle = document.querySelector("#input-title");
-var inputBody = document.querySelector("#input-body");
+var titleField = document.querySelector("#title-field");
+var textField = document.querySelector("#text-field");
 var cardTitle = document.querySelector("#card-title");
 var cardText = document.querySelector("#card-text");
 var savedIdeas = document.querySelector("#saved-ideas");
@@ -20,7 +20,7 @@ starredBtn.addEventListener("click", showStarred);
 
 function saveIdeaCard(event) {
   event.preventDefault();
-  var idea = new Idea(inputTitle.value, inputBody.value);
+  var idea = new Idea(titleField.value, textField.value);
   ideaListArr.push(idea);
   reload();
   // savedIdeas.innerHTML += `<section class="single-card" id="single-card">
@@ -37,17 +37,17 @@ function saveIdeaCard(event) {
   //     />
   //   </div>
   //   <div class="card-body">
-  //     <h1 class="card-title" id="card-title">${inputTitle.value}</h1>
-  //     <p class="card-text" id="card-text">${inputBody.value}</p>
+  //     <h1 class="card-title" id="card-title">${titleField.value}</h1>
+  //     <p class="card-text" id="card-text">${textField.value}</p>
   //   </div>
   //   <div class="card-bottom-bar">
   //     <img class="comment-img" src="assets/comment.svg" alt="comment icon"/>
   //     <p class="comment">Comment</p>
   //   </div>
   // </section>`;
-  inputTitle.value = "";
-  inputBody.value = "";
-  if (inputTitle.value && inputBody.value) {
+  titleField.value = "";
+  textField.value = "";
+  if (titleField.value && textField.value) {
     saveBtn.disabled = false;
   } else {
     saveBtn.disabled = true;
@@ -55,7 +55,7 @@ function saveIdeaCard(event) {
 }
 
 function disableButton() {
-  if (inputTitle.value && inputBody.value) {
+  if (titleField.value && textField.value) {
     saveBtn.disabled = false;
   } else {
     saveBtn.disabled = true;
@@ -74,7 +74,7 @@ function deletingCard(event) {
   }
 }
 
-var idea = new Idea(inputTitle.value, inputBody.value);
+var idea = new Idea(titleField.value, textField.value);
 console.log(idea);
 function addColoredStar(event) {
   var cardID = parseInt(event.target.id);

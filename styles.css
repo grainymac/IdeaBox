@@ -1,7 +1,3 @@
-/* -------------------------------BODY */
-/* * {
-  border: solid red;
-} */
 
 html,
 body {
@@ -39,8 +35,7 @@ img {
 }
 
 .starred-border {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
+  border-top: 1px 0px 1px 0px solid;
   border-color: #5356a4;
 }
 
@@ -64,6 +59,7 @@ img {
   width: 80%;
   vertical-align: text-bottom;
 }
+
 /* -------------------------------FORM SECTION */
 .right-section {
   display: flex;
@@ -74,38 +70,35 @@ img {
 .form-section {
   background-color: #a9aad2;
   display: flex;
-  flex-grow: 3;
   width: 100%;
+  height: 40%;
   align-items: center;
   justify-content: center;
-  /* align-content: space-between; */
   column-gap: 30px;
-  height: 40%;
 }
 
 .user-input {
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 15px;
   width: 50%;
+  margin-bottom: 20px;
 }
 
 .title-input {
-  /* rename class-Piper */
   display: flex;
   flex-direction: column;
 }
 
-.input-title {
+.title-field {
   height: 30px;
 }
 
-.input-body {
-  height: 90px;
+.text-field {
+  height: 60px;
 }
 
 .body-input {
-  /* rename class-Piper */
   display: flex;
   flex-direction: column;
 }
@@ -122,6 +115,7 @@ input {
   border-style: solid;
   border-color: #1f1f3d;
   border-radius: 5px;
+  vertical-align: top;  
 }
 
 .search {
@@ -170,14 +164,12 @@ input {
   background-color: #eaeaf4;
   height: 60%;
   width: 100%;
-  margin-left: 20px;
+  margin: 0px 0px 0px 20px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
   gap: 20px;
-
-  /* when flex wrap property is set to wrap, use align-content */
 }
 
 .single-card {
@@ -185,7 +177,7 @@ input {
   flex-direction: column;
   height: 220px;
   width: 200px;
-  margin-top: 15px;
+  margin: 15px 0px 0px 0px;
   border: 2px;
   border-style: solid;
   border-color: #1f1f3d;
@@ -204,14 +196,15 @@ input {
 .card-body h1 {
   color: #1f1f3d;
   font-weight: bold;
-  margin-left: 10px;
+  margin: 10px 10px 0px 10px;
+  word-wrap: break-word;
 }
 
 .card-body p {
   color: #1f1f3d;
   font-weight: light;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: 10px 10px 10px 0px;
+  word-wrap: break-word;
 }
 
 .card-bottom-bar {
@@ -232,48 +225,3 @@ input {
 .hidden {
   display: none;
 }
-/* -------------------------------FONTS
-header text:
-    font-family: Open Sans;
-    font-weight: bold;
-
-body and label text:
-    font-family: Open Sans;
-    font-weight: light;
-
--------------------------------BACKGROUND COLOURS
-    background-color: #1f1f3d;
-    background-color: #a9aad2;
-    background-color: #eaeaf4;
-
--------------------------------IDEA BOX
- top:
-    background-color: #1f1f3d;
-    color: #1f1f3d;
-
-middle:
-    background-color: #ffffff;
-    color: #1f1f3d;
-
-bottom:
-    background-color: #5356a4;
-    color: #e9e9f3;
-
--------------------------------LEFT NAVIGATION
-header1:
-    color: #e9e9f3;
-
-line break:
-    color: #353567;
-
-header 2:
-    color: #bfbfdd;
-
-button:
-    background-color: #5356a4;
-    color: #e9e9f3;
-
-background:
-    background-color: #1f1f3d;
-
-*/
