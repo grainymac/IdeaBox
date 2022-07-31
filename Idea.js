@@ -1,6 +1,7 @@
 class Idea {
   constructor(savedTitle, savedBody) {
     this.id = Date.now();
+    this.otherId = Math.floor(Math.random() * 100);
     this.title = savedTitle;
     this.body = savedBody;
     this.star = false;
