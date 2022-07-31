@@ -5,13 +5,11 @@ var ideaListArr = [];
 var saveBtn = document.querySelector("#save-btn");
 var titleField = document.querySelector("#title-field");
 var textField = document.querySelector("#text-field");
-var cardTitle = document.querySelector("#card-title");
-var cardText = document.querySelector("#card-text");
 var savedIdeas = document.querySelector("#saved-ideas");
 var formSection = document.querySelector("#form-section");
 var deleteCard = document.querySelector("#delete-card");
 var starredBtn = document.querySelector("#starred-btn");
-var indCard = document.querySelector("#single-card")
+
 //--------------------------------------------Event Listerners
 saveBtn.addEventListener("click", saveIdeaCard);
 formSection.addEventListener("input", disableButton);
@@ -23,28 +21,6 @@ function saveIdeaCard(event) {
   var idea = new Idea(titleField.value, textField.value);
   ideaListArr.push(idea);
   reload();
-  // savedIdeas.innerHTML += `<section class="single-card" id="single-card">
-  //   <div class="card-top-bar">
-  //     <img
-  //     class="star-img"
-  //     src="assets/star.svg"
-  //     alt="star icon"
-  //     />
-  //     <img
-  //     class="delete-img"
-  //     src="assets/delete.svg"
-  //     alt="delete icon"
-  //     />
-  //   </div>
-  //   <div class="card-body">
-  //     <h1 class="card-title" id="card-title">${titleField.value}</h1>
-  //     <p class="card-text" id="card-text">${textField.value}</p>
-  //   </div>
-  //   <div class="card-bottom-bar">
-  //     <img class="comment-img" src="assets/comment.svg" alt="comment icon"/>
-  //     <p class="comment">Comment</p>
-  //   </div>
-  // </section>`;
   titleField.value = "";
   textField.value = "";
   if (titleField.value && textField.value) {
@@ -64,52 +40,41 @@ function disableButton() {
 
 function deletingCard(event) {
   var cardID = parseInt(event.target.id);
-  console.log(event.target)
   for (var i = 0; i < ideaListArr.length; i++) {
     if (cardID === ideaListArr[i].id) {
       ideaListArr.splice(i, 1);
       reload();
-      console.log(ideaListArr);
     }
   }
 }
 
 var idea = new Idea(titleField.value, textField.value);
-console.log(idea);
 function addColoredStar(event) {
   var cardID = parseInt(event.target.id);
   for (var i = 0; i < ideaListArr.length; i++) {
-    if (cardID === ideaListArr[i].id) {
+    if (cardID === ideaListArr[i].otherId) {
       ideaListArr[i].updateIdea(cardID);
-      console.log(ideaListArr);
     }
   }
 }
 
-// function deletingCard(event) {
-//   var unwantedIdea = event.target.closest('section');
-//   event.target.closest('section').remove();
-//   for (var i = 0; i < ideaList.length; i++) {
-//     console.log('hiii', ideaList[i].unwantedIdea);
-//     if (ideaList[i].id === unwantedIdea.id) {
-//       ideaList.splice(i, 1);
-//       i--;
-//     }
-//     console.log('hello', ideaList);
-//     // reload();
-//   }
-
 function reload() {
   savedIdeas.innerHTML = "";
+  var srcStar = "assets/star.svg";
   for (var i = 0; i < ideaListArr.length; i++) {
+    if (ideaListArr[i].star) {
+      srcStar = "assets/star-active.svg";
+    } else {
+      srcStar = "assets/star.svg";
+    }
     savedIdeas.innerHTML += `<section class="single-card" id="single-card">
     <div class="card-top-bar">
       <img
       onclick="addColoredStar(event)"
       class="star-img"
-      src="assets/star.svg"
+      src="${srcStar}"
       alt="star icon"
-      id="${ideaListArr[i].id}"
+      id="${ideaListArr[i].otherId}"
       />
       <img
       onclick="deletingCard(event)"
@@ -130,25 +95,3 @@ function reload() {
   </section>`;
   }
 }
-
-//create helper function to hide each card
-function showStarred() {
-  //hide the
-  for (var i = 0; i < ideaListArr.length - 1; i++);
-  // console.log("hello", i);
-  // console.log("hi", ideaListArr);
-  // console.log("good day", ideaListArr[i]);
-  // // console.log(ideaListArr[i].star)
-    if (ideaListArr[i].star) {
-      console.log("hello", ideaListArr[i])
-      indCard.classList.remove("hidden")
-      //change target - extract id from array
-      //get the id to match the id in the DOM
-    }
-}
-//show starred Ideas
-//look at each element in the array
-//check if this.star is true
-//if this.star is false, we want to add hidden if this.star
-//account for shift in elements as we go through the array (i--)
-//want to display new array in DOM
