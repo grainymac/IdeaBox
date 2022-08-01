@@ -16,7 +16,7 @@ Every developer has more ideas than time. As David Allen likes to say “the hum
 
 Throughout the project, one of our focuses will be on providing a fluid and responsive client-side interface. To this end, we’ll rely on JavaScript to implement snappy filtering in the browser.
 
-![Screen Shot 2022-08-01 at 10 28 52 AM](https://user-images.githubusercontent.com/106535343/182226331-f74bbfd9-3b55-4447-afe2-657d3e9693c6.png)
+![Screen Shot 2022-08-01 at 4 36 16 PM](https://user-images.githubusercontent.com/106535343/182250704-c6ef1225-2ef8-44d0-9a3f-ca16fe6d7b53.png)
 
 
 The spec for this project can be found [here](https://frontend.turing.edu/projects/module-1/ideabox-group-v2.html). The deployment page can be found [here](https://jmyacobn.github.io/IdeaBox/). Video of web application [here](https://www.youtube.com/watch?v=B0ckjKInJhY).
@@ -64,3 +64,4 @@ The spec for this project can be found [here](https://frontend.turing.edu/projec
 * When a user types in the search bar, idea cards filter to show which card contains those letters. 
 * Create a more interactive and dynamic CSS.
 * Add a comment function to the idea cards to expand on the data model.
+
