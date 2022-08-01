@@ -37,20 +37,26 @@ The spec for this project can be found [here](https://frontend.turing.edu/projec
 * JavaScript
 * Github
 
+### Set-up
+
+* one person create a directory called ideabox.  initialize the git in the local repo.  
+* push local repo to remote repo on GitHub.  rest of tean clones repo.
+
+
 ### Wins
 
-*
-*
-*
+* Deepened our understanding of reading and writting code. How to manipulate the DOM with the data model. Refactoring.
+* Debugging iteration 3.
+* Commuicating, listening, and working together.  Following the DTR
 
 ### Challenges
 
-*
-*
-*
+* Updating the DOM with the data model.
+* Filtering the favorite idea cards.
+* affecting the CSS to where the size of our application was dynamic.
 
 ### Future Features
 
-*
-*
-*
+* Iteration 4
+* More interactive/dynamic CSS
+* expand on the data model concept by adding a comment function to the idea cards.
