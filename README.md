@@ -39,24 +39,29 @@ The spec for this project can be found [here](https://frontend.turing.edu/projec
 
 ### Set-up
 
-* one person create a directory called ideabox.  initialize the git in the local repo.  
-* push local repo to remote repo on GitHub.  rest of tean clones repo.
+* In your terminal, create a direcotry called `IdeaBox`
+* Initialize git in the local repo by `git init`
+* Create three files name `main.js`, `index.html`, `Idea.js`, and `style.css`
+* push local repo to remote repo on GitHub, using `git push origin main`  
+* Rest of tean clones repo using `git clone`
 
 
 ### Wins
 
-* Deepened our understanding of reading and writting code. How to manipulate the DOM with the data model. Refactoring.
-* Debugging iteration 3.
-* Commuicating, listening, and working together.  Following the DTR
+* Deepened our understanding of reading, writting code by manipulating the DOM with the data model and refactoring.
+* Debugged the issues that arised when staring a buttob by outside research, console.log. 
+* Followed the DTR by respectfully commuicating, and listening to eachother.
 
 ### Challenges
 
 * Updating the DOM with the data model.
 * Filtering the favorite idea cards.
-* affecting the CSS to where the size of our application was dynamic.
+* Affecting the CSS to where the size of our application was dynamic to each page.
 
 ### Future Features
 
-* Iteration 4
+* When user clicks on flitr button, filtering saved ideas. 
+* when user clicks ob all ideas, page switches back to showing all Ideas
+* When a User types in the search bar, idea cards filter to show which card contains those letter. 
 * More interactive/dynamic CSS
 * expand on the data model concept by adding a comment function to the idea cards.
