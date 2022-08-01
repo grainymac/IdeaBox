@@ -48,14 +48,14 @@ The spec for this project can be found [here](https://frontend.turing.edu/projec
 ### Wins
 
 * Deepened our understanding of reading and writing code by manipulating the DOM with the data model and refactoring
-* Debugged the issues that arose when starring a button by doing some indendent research and utilized console logging and Chrome Dev Tools
+* Debugged the issues that arose when starring a button by indendent research, utilizing console logs, and Chrome Dev Tools
 * Followed the DTR by respectfully commuicating and listening to each as we worked through the project collaboratively
 
 ### Challenges
 
 * Updating the DOM with the data model
 * Filtering the favorite idea cards
-* Affecting the CSS to where the size of our application was dynamic to each page
+* Using CSS to create a webpage that is responsive to multiple screen sizes
 
 ### Future Features
 
