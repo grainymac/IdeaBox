@@ -12,10 +12,9 @@ var starredBtn = document.querySelector("#starred-btn");
 
 //--------------------------------------------Event Listerners
 saveBtn.addEventListener("click", saveIdeaCard);
-formSection.addEventListener("input", disableButton);
-starredBtn.addEventListener("click", showStarred);
-//----------------------------------------------Functions
+formSection.addEventListener("input", enableButton);
 
+//----------------------------------------------Functions
 function saveIdeaCard(event) {
   event.preventDefault();
   var idea = new Idea(titleField.value, textField.value);
@@ -23,14 +22,10 @@ function saveIdeaCard(event) {
   reload();
   titleField.value = "";
   textField.value = "";
-  if (titleField.value && textField.value) {
-    saveBtn.disabled = false;
-  } else {
-    saveBtn.disabled = true;
-  }
+  enableButton();
 }
 
-function disableButton() {
+function enableButton() {
   if (titleField.value && textField.value) {
     saveBtn.disabled = false;
   } else {
@@ -48,7 +43,6 @@ function deletingCard(event) {
   }
 }
 
-var idea = new Idea(titleField.value, textField.value);
 function addColoredStar(event) {
   var cardID = parseInt(event.target.id);
   for (var i = 0; i < ideaListArr.length; i++) {
@@ -67,7 +61,7 @@ function reload() {
     } else {
       srcStar = "assets/star.svg";
     }
-    savedIdeas.innerHTML += `<section class="single-card" id="single-card">
+    savedIdeas.innerHTML += `<section class="single-card">
     <div class="card-top-bar">
       <img
       onclick="addColoredStar(event)"
