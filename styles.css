@@ -21,6 +21,21 @@ img {
   width: 28px;
 }
 
+label {
+  color: #1f1f3d;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+input {
+  border: 1px;
+  border-style: solid;
+  border-color: #1f1f3d;
+  border-radius: 5px;
+  vertical-align: top;
+}
+
 /* -------------------------------LEFT NAV SECTION */
 .left-nav {
   background-color: #1f1f3d;
@@ -84,6 +99,7 @@ img {
   margin-bottom: 20px;
 }
 
+.body-input,
 .title-input {
   display: flex;
   flex-direction: column;
@@ -95,26 +111,6 @@ img {
 
 .text-field {
   height: 60px;
-}
-
-.body-input {
-  display: flex;
-  flex-direction: column;
-}
-
-label {
-  color: #1f1f3d;
-  padding-bottom: 10px;
-  font-weight: bold;
-  font-size: 18px;
-}
-
-input {
-  border: 1px;
-  border-style: solid;
-  border-color: #1f1f3d;
-  border-radius: 5px;
-  vertical-align: top;
 }
 
 .search {
