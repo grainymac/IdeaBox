@@ -59,8 +59,8 @@ The spec for this project can be found [here](https://frontend.turing.edu/projec
 
 ### Future Features
 
-* When user clicks on fliter button, filtering saved ideas. 
+* When user clicks on "filter starred ideas", page only shows favorited ideas. 
 * When user clicks on all ideas, page switches back to showing all Ideas.
-* When a user types in the search bar, idea cards filter to show which card contains those letter. 
+* When a user types in the search bar, idea cards filter to show which card contains those letters. 
 * Create a more interactive and dynamic CSS.
 * Add a comment function to the idea cards to expand on the data model.
